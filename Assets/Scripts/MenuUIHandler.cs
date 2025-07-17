@@ -16,7 +16,9 @@ public class MenuUIHandler : MonoBehaviour
 
     public void NewColorSelected(Color color)
     {
-        // add code here to handle when a color is selected
+        // This function is called when a new color is selected in the color picker
+        MainManager.Instance.TeamColor = color;
+        Debug.Log("New team color selected: " + color);
     }
 
     private void Start()
